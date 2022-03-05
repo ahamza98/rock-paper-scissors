@@ -1,3 +1,49 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Source+Sans+Pro:wght@300&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: green;
+    height: 100vh;
+    background-color: rgb(96, 96, 184);
+}
+
+/* game area*/
+.container {
+    width: 60%;
+    min-width: 500px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.score-area {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.artilleries {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-art{
+    
+    color: black;
+    font-size: 50px;
+    height: 110px;
+    width: 110px;
 }
