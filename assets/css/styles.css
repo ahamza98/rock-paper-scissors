@@ -10,6 +10,9 @@
 body {
     height: 100vh;
     background-color: rgb(96, 96, 184);
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 600;
+   
 }
 
 /* game area*/
@@ -31,6 +34,7 @@ body {
     justify-content: space-around;
     margin-bottom: 50px;
     text-align: center;
+    font-size: 30px;
 }
 
 .artilleries {
@@ -42,8 +46,18 @@ body {
 
 .btn-art{
     
-    color: black;
-    font-size: 50px;
-    height: 110px;
-    width: 110px;
+    background-color: rgb(96, 96, 184);
+    color: white;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-art:hover {
+    color: rgb(96, 96, 184);
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+
 }
