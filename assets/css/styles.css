@@ -9,11 +9,25 @@
 
 body {
     height: 100vh;
+    background: url("../images/fingers-149295_1280.png") ;
     background-color: rgb(96, 96, 184);
     font-family: Source Sans Pro, sans-serif;
     font-weight: 600;
    
 }
+
+/*header*/
+.header {
+   
+    width: 75%;
+    margin: 0 auto ;
+    margin-top: 20px;
+    text-align: center
+   
+}
+
+
+
 
 /* game area*/
 .container {
@@ -61,3 +75,82 @@ body {
     box-shadow: 0 15px 25px rgba(0,0,0,0.6);
 
 }
+
+/* reset button*/
+
+.reset-button {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.reset-button button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(202, 8, 8);
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* rules button*/
+.rules-button {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.rules-button button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(96, 96, 184);
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer-container {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    
+   
+}
+
+.social-media {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(96, 96, 184);
+    cursor: pointer;
+}
+
+.social-media a:hover {
+    background-color: rgb(96, 96, 184);
+    color: #ffffff;
+}
+
+/* Media Queries */
+ /* For mobile phones: */
+@media only screen and (max-width: 512px) {
+   
+    .container {
+      
+        height: 400px;
+       
+    }
+  }
