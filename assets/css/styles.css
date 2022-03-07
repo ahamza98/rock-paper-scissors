@@ -22,8 +22,13 @@ body {
     width: 75%;
     margin: 0 auto ;
     margin-top: 20px;
-    text-align: center
-   
+    text-align: center;
+    padding: 20px;
+     
+}
+
+.header h1 {
+    font-weight: bold;
 }
 
 
@@ -41,6 +46,10 @@ body {
     left: 50%;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.container p{
+    font-weight: bold;
 }
 
 .score-area {
@@ -93,7 +102,10 @@ body {
     color: #ffffff;
     border-color: #ffffff;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+
 
 /* rules button*/
 .rules-button {
@@ -111,6 +123,7 @@ body {
     color: #ffffff;
     border-color: #ffffff;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* footer */
