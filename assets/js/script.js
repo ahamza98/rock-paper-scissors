@@ -12,9 +12,51 @@ let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
 //reset button//
-let reset = document.getElementById('reset')
+let reset = document.getElementById('reset');
+
+// create a function so that when you click on one of the choices the game will start//
+
+// create choices for AI //
+function aiChoice() {
+    let choices = ['rock', 'paper', 'scissors']
+    // Use Math.floor(Math.random()) to make the choices a interger//
+    let interger = Math.floor(Math.random(choices)* 3);
+    return choices[interger];
+}
+
+// function to define what choices wins or ties, and score incremented for winner//
+function startGame(userChoice) {
+    let aiChoice = aiChoice();
+    if ((userChoice === 'rock' && aiChoice === 'scissors')
+       || (userChoice === 'paper' && aiChoice === "rock")
+       || (userChoice === "scissors" && aiChoice === "paper")) {
+        return win();
+    } 
+    else if ((userChoice === 'rock' && aiChoice === 'paper')
+        || (userChoice === 'paper' && aiChoice === 'scissors')
+        || (userChoice === 'scissors' && aiChoice === 'rock')){
+            return loss();
+        }
+        else if (userChoice === aiChoice){
+            return tie();
+        }
+}
 
 
+function main() {
+    rock.addEventListener('click', function() {
+        startGame("rock")
+        
+    })
+    paper.addEventListener('click', function() {
+        startGame("paper")
+    })
+    scissors.addEventListener('click', function() {
+        startGame("scissors")
+    })
+}
+
+main();
 
 
 

@@ -9,6 +9,9 @@
     <meta name="keywords" content="Rock, Paper, scissors, game, AI">
     <meta name="author" content="Mohammad Hamza">
 
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/controller-1294077_1280.png">
+
     <!--Font awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -34,14 +37,14 @@
 
         <!--buttons for choices-->
         <div class="artilleries">
-            <button class="btn-art">
+            <button class="btn-art" id='rock'>
                 <i class="fa-regular fa-hand-back-fist"></i>
             </button>
                 
-            <button class="btn-art">
+            <button class="btn-art" id="paper">
                 <i class="fa-regular fa-hand"></i>
             </button>
-            <button class="btn-art">
+            <button class="btn-art" id="scissors">
                 <i class="fa-regular fa-hand-scissors"></i>
             </button>
         </div>
@@ -53,12 +56,12 @@
         <!--User and AI moves shown-->
         <!--reset button-->
         <div class="reset-button">
-            <button>Reset</button>
+            <button id="reset">Reset</button>
         </div>
         <!--Rules pop up Button-->
 
         <div class="rules-button">
-            <button>Rules</button>
+            <button id="rules">Rules</button>
         </div>
     </div>
 
