@@ -14,7 +14,7 @@ let scissors = document.getElementById('scissors');
 //reset button//
 let reset = document.getElementById('reset');
 
-// create a function so that when you click on one of the choices the game will start//
+
 
 // create choices for AI //
 function aiChoice() {
@@ -24,25 +24,31 @@ function aiChoice() {
     return choices[interger];
 }
 
-// function to define what choices wins or ties, and score incremented for winner//
+/* Actions to screen when user wins, loses or draws (score incrementation and visual represantion
+on the sceen).*/
+function userWins() {
+
+}
+
+// function to define what choices wins or ties, //
 function startGame(userChoice) {
     let aiChoice = aiChoice();
     if ((userChoice === 'rock' && aiChoice === 'scissors')
        || (userChoice === 'paper' && aiChoice === "rock")
        || (userChoice === "scissors" && aiChoice === "paper")) {
-        return win();
+        return userWin();
     } 
     else if ((userChoice === 'rock' && aiChoice === 'paper')
         || (userChoice === 'paper' && aiChoice === 'scissors')
         || (userChoice === 'scissors' && aiChoice === 'rock')){
-            return loss();
+            return userLoss();
         }
         else if (userChoice === aiChoice){
             return tie();
         }
 }
 
-
+// create a function so that when you click on one of the choices the game will start//
 function main() {
     rock.addEventListener('click', function() {
         startGame("rock")
