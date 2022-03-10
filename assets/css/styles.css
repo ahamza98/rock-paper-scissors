@@ -100,7 +100,6 @@ body {
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: 1px solid black;
     margin: 0 auto;
 }
 
@@ -145,12 +144,54 @@ body {
 .rules-button button {
     font-size: 20px;
     padding: 10px;
-    background-color: rgb(96, 96, 184);
+    background-color: #798581;
     color: #ffffff;
     border-color: #ffffff;
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* Modal for Rules button */
+/* modal container covers the whole body*/
+.modal-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    pointer-events: none;
+
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.modal {
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0 auto;
+}
+
+.modal p {
+    font-size: 15px;
+    opacity: 0.6;
+}
+
 
 /* footer */
 .footer-container {
@@ -181,6 +222,10 @@ body {
 .social-media a:hover {
     background-color: rgb(96, 96, 184);
     color: #ffffff;
+}
+
+button {
+    font-family: inherit;
 }
 
 /* Media Queries */

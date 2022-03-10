@@ -44,7 +44,7 @@ function userWin(userChoice, aiChoice) {
     userScore++;
     userScoreDisplay.innerHTML = userScore;
     aiScoreDisplay.innerHTML = aiScore;
-    resultUser.innerHTML = textToImage(userChoice) ;
+    resultUser.innerHTML = textToImage(userChoice);
     resultAi.innerHTML =  textToImage(aiChoice);
 
 }
@@ -104,8 +104,20 @@ function main() {
 main();
 
 
+// Rules Button //
 
+let openRules = document.getElementById('rules')
+let closeRules = document.getElementById('close')
+let modelContainer = document.getElementById('modelCon')
 
+// Open functions //
+openRules.addEventListener('click', () => {
+    modelContainer.classList.add('show');
+})
 
+// close functions //
+closeRules.addEventListener('click', () => {
+    modelContainer.classList.remove('show');
+})
 
 
