@@ -6,7 +6,11 @@ let aiScore = 0;
 let userScoreDisplay = document.getElementById('userScore');
 let aiScoreDisplay = document.getElementById('aiScore');
 let scores = document.getElementsByClassName('score-area');
-let result = document.getElementById('result');
+
+let resultUser = document.getElementById('result-user');
+let resultAi = document.getElementById('result-ai');
+
+
 
 // choices //
 let rock = document.getElementById('rock');
@@ -40,7 +44,8 @@ function userWin(userChoice, aiChoice) {
     userScore++;
     userScoreDisplay.innerHTML = userScore;
     aiScoreDisplay.innerHTML = aiScore;
-    result.innerHTML = textToImage(userChoice)  + " beats " + textToImage(aiChoice) ;
+    resultUser.innerHTML = textToImage(userChoice) ;
+    resultAi.innerHTML =  textToImage(aiChoice);
 
 }
 
@@ -48,11 +53,18 @@ function aiWin(userChoice, aiChoice) {
     aiScore++;
     aiScoreDisplay.innerHTML = aiScore;
     userScoreDisplay.innerHTML = userScore;
-    result.innerHTML = textToImage(aiChoice)  + " beats " + textToImage(userChoice) ;
+    resultUser.innerHTML = textToImage(userChoice) ;
+    resultAi.innerHTML =  textToImage(aiChoice);
+    
 
 }
 
-function tie() {
+function tie(userChoice, aiChoice) {
+    aiScoreDisplay.innerHTML = aiScore;
+    userScoreDisplay.innerHTML = userScore;
+    resultUser.innerHTML = textToImage(userChoice) ;
+    resultAi.innerHTML =  textToImage(aiChoice);
+    
 
 }
 
