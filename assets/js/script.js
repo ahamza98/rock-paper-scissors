@@ -7,32 +7,48 @@ let userScoreDisplay = document.getElementById('userScore');
 let aiScoreDisplay = document.getElementById('aiScore');
 let scores = document.getElementsByClassName('score-area');
 let result = document.getElementById('result');
+
 // choices //
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissors = document.getElementById('scissors');
+
 //reset button//
 let reset = document.getElementById('reset');
 
 
 
 // create choices for AI //
-function aiChoice() {
-    let choices = ['rock', 'paper', 'scissors']
+ function aiChoices() {
+    let choices = ['rock', 'paper', 'scissors'];
     // Use Math.floor(Math.random()) to make the choices a interger//
-    let interger = Math.floor(Math.random(choices)* 3);
+    let interger = Math.floor(Math.random(choices) * 3);
     return choices[interger];
 }
 
 /* Actions to screen when user wins, loses or draws (score incrementation and visual represantion
 on the sceen).*/
-function userWins() {
+function userWin() {
+    userScore++;
+    userScoreDisplay.innerHTML = userScore;
+    aiScoreDisplay.innerHTML = aiScore;
+
+}
+
+function aiWin() {
+    aiScore++;
+    aiScoreDisplay.innerHTML = aiScore;
+    userScoreDisplay.innerHTML = userScore;
+}
+
+function tie() {
 
 }
 
 // function to define what choices wins or ties, //
 function startGame(userChoice) {
-    let aiChoice = aiChoice();
+
+    let aiChoice = aiChoices();
     if ((userChoice === 'rock' && aiChoice === 'scissors')
        || (userChoice === 'paper' && aiChoice === "rock")
        || (userChoice === "scissors" && aiChoice === "paper")) {
@@ -41,7 +57,7 @@ function startGame(userChoice) {
     else if ((userChoice === 'rock' && aiChoice === 'paper')
         || (userChoice === 'paper' && aiChoice === 'scissors')
         || (userChoice === 'scissors' && aiChoice === 'rock')){
-            return userLoss();
+            return aiWin();
         }
         else if (userChoice === aiChoice){
             return tie();
@@ -51,18 +67,20 @@ function startGame(userChoice) {
 // create a function so that when you click on one of the choices the game will start//
 function main() {
     rock.addEventListener('click', function() {
-        startGame("rock")
+        startGame('rock')
         
     })
     paper.addEventListener('click', function() {
-        startGame("paper")
+        startGame('paper')
     })
     scissors.addEventListener('click', function() {
-        startGame("scissors")
+        startGame('scissors')
     })
 }
 
 main();
+
+
 
 
 
