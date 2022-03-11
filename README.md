@@ -1,6 +1,11 @@
 # Rock Paper Scissors
 (Author : Mohammad Abdullah Hamza)
 
+![Mockup image](readme-images/ami-responsive/project-2-ami-responsive-design.png)
+
+[Live webpage](https://ahamza98.github.io/rock-paper-scissors/)
+
+#
 ## Project Goals 
 The goal of this project was to create a simple rock, paper, scissors game against AI. If you win a round you get a point, if you lose, AI gets a point.
 
@@ -31,4 +36,85 @@ The goal of this project was to create a simple rock, paper, scissors game again
 ### Site Owner Stories
 1. Customers to enjoy the game
 2. Reach us on social media
+
+#
+## Design
+
+### Colour Choices
+- The colur choices were chosen to be bright and colourful like red, blue and green to denote excitement.
+- Also have used linear-gradient for background colors to make it less plain and more eye-catching
+
+
+### Fonts
+- Fonts have been imported from Google fonts.
+- The font that has been used throughout the website is **Source Sans Pro**.
+
+### Icons and Favicons
+- The favicon is a image of a controller taken from a free website called [Pixabay](https://pixabay.com/vectors/controller-pad-video-game-1294077/)
+- [Fontawesome](https://fontawesome.com/) was used for the rock, paper and scissor buttons.
+
+### Wireframes
+<details><summary>Browser Open</summary>
+- This is how the browser will look when it is started. Scores are at 0. 3 buttons for choices, as well as a reset and rules button
+
+<img src="readme-images/wireframes/project-2-wireframe-open-window.jpg">
+</details>
+<details><summary>Game Mode</summary>
+- When the choice button is clicked, scores will be incremented for winners, or stay the same if it is a tie. A visual represantation of the choices will be shown below the buttons.
+
+<img src="readme-images/wireframes/project-2-wireframe-click-button.jpg">
+</details>
+
+<details><summary>Rules Modal</summary>
+- When the rules button is clicked, a modal will pop out of the rules
+
+<img src="readme-images/wireframes/project-2-wireframe-rules-model.jpg">
+</details>
+
+#
+#
+## Features
+This website consists of one page and 5 features.
+
+<details><summary>Start Screen</summary>
+- When website is opened and when reset button is pressed.
+- Scores are a default zero.
+- 3 buttons for choices
+- Rules button that opens a modal
+- Reset button that resets the score
+
+<img src="readme-images/features/project-2-open-browser-screen.png">
+</details>
+
+<details><summary>Header</summary>
+- The Header is very simple to reflect the simplicity of the game
+
+<img src="readme-images/features/project-2-header.png">
+</details>
+
+<details><summary>Button Choices</summary>
+- The user has 3 button to choose from, Rock, Paper or Scissors. The buttons change colour when hovered on
+
+<img src="readme-images/features/project-2-button-choices.png">
+</details>
+
+<details><summary>Game Start</summary>
+- Scores Increment if user or AI wins. A visual represantation is shown below of user and AI choices. Green border will be wrapped around the winner, red around the loser and blue for both when there is a tie.
+
+<img src="readme-images/features/project-2-game-played.png">
+</details>
+
+<details><summary>Rules Modal</summary>
+- When the rules button is clicked, a modal will pop up with a cross **X** to close it.
+
+<img src="readme-images/features/project-2-rules-modal.png">
+</details>
+
+<details><summary>Footer</summary>
+- Finally a footer of the social media platforms.
+
+<img src="readme-images/features/project-2-footer.png">
+</details>
+
+
 
