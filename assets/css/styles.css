@@ -8,8 +8,10 @@
 }
 
 body {
-    display: inline-block;
-    height: 100vh;
+    display: flex;
+    height: 650px;
+    
+    overflow-x: hidden;
     background: rgb(9,121,118);
     background: linear-gradient(90deg, rgba(9,121,118,0.9756945014333859) 0%, rgba(16,52,133,1) 100%);
     font-family: Source Sans Pro, sans-serif;
@@ -19,8 +21,9 @@ body {
 
 /*header*/
 .header {
-    display: block;
-    
+    display: flex;
+    justify-content: center;
+    left: 50%;
     width: 75%;
     margin: 0 auto ;
     margin-top: 20px;
@@ -38,13 +41,13 @@ body {
 
 /* game area*/
 .container {
-    
-    width: 60%;
-    min-width: 500px;
-    margin-top: 20px;
-    background-color: #ffffff;
-    padding: 40px 30px;
     position: absolute;
+    width: 80%;
+    
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px 15px;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
@@ -177,15 +180,17 @@ body {
 /* modal container covers the whole body*/
 .modal-container {
     background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity (0.5s);
+    transition: opacity 0.5s ease-in-out;
     
 }
 
@@ -247,11 +252,23 @@ button {
 
 /* Media Queries */
  /* For mobile phones: */
-@media only screen and (max-width: 512px) {
+ @media only screen and (max-width: 512px) {
    
     .container {
       
-        height: 400px;
+        height: 500px;
+       
+    }
+  }
+
+  @media only screen and (max-width: 322px) {
+      .header {
+          width: 100%;
+      }
+   
+    .container {
+        width: 90%;
+        
        
     }
   }
