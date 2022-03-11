@@ -7,6 +7,9 @@ let userScoreDisplay = document.getElementById('userScore');
 let aiScoreDisplay = document.getElementById('aiScore');
 let scores = document.getElementsByClassName('score-area');
 
+let resultUserContainer = document.getElementById('rs-user')
+let resultAiContainer = document.getElementById('rs-ai')
+
 let resultUser = document.getElementById('result-user');
 let resultAi = document.getElementById('result-ai');
 
@@ -44,8 +47,12 @@ function userWin(userChoice, aiChoice) {
     userScore++;
     userScoreDisplay.innerHTML = userScore;
     aiScoreDisplay.innerHTML = aiScore;
+
     resultUser.innerHTML = textToImage(userChoice);
+    
+
     resultAi.innerHTML =  textToImage(aiChoice);
+    
 
 }
 
@@ -53,8 +60,12 @@ function aiWin(userChoice, aiChoice) {
     aiScore++;
     aiScoreDisplay.innerHTML = aiScore;
     userScoreDisplay.innerHTML = userScore;
+
     resultUser.innerHTML = textToImage(userChoice) ;
+    
+
     resultAi.innerHTML =  textToImage(aiChoice);
+    
     
 
 }
@@ -62,8 +73,13 @@ function aiWin(userChoice, aiChoice) {
 function tie(userChoice, aiChoice) {
     aiScoreDisplay.innerHTML = aiScore;
     userScoreDisplay.innerHTML = userScore;
-    resultUser.innerHTML = textToImage(userChoice) ;
+
+    resultUser.innerHTML = textToImage(userChoice);
+    
+
     resultAi.innerHTML =  textToImage(aiChoice);
+    
+
     
 
 }
@@ -75,14 +91,22 @@ function startGame(userChoice) {
     if ((userChoice === 'rock' && aiChoice === 'scissors')
        || (userChoice === 'paper' && aiChoice === "rock")
        || (userChoice === "scissors" && aiChoice === "paper")) {
+        resultUserContainer.classList.add('green-border')
+        resultAiContainer.classList.add('red-border')
+
         return userWin(userChoice, aiChoice);
     } 
     else if ((userChoice === 'rock' && aiChoice === 'paper')
         || (userChoice === 'paper' && aiChoice === 'scissors')
         || (userChoice === 'scissors' && aiChoice === 'rock')){
+            resultUserContainer.classList.add('red-border')
+            resultAiContainer.classList.add('green-border')
             return aiWin(userChoice, aiChoice);
         }
         else if (userChoice === aiChoice){
+            resultUserContainer.classList.add('blue-border')
+            resultAiContainer.classList.add('blue-border')
+
             return tie(userChoice, aiChoice);
         }
 }
@@ -130,5 +154,6 @@ reset.addEventListener('click', () => {
     aiScoreDisplay.innerHTML = aiScore
     resultUser.innerHTML = "";
     resultAi.innerHTML = "";
+
 })
 
