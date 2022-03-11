@@ -26,6 +26,7 @@ The goal of this project was to create a simple rock, paper, scissors game again
 3. Get a clear message or sign if i won a round.
 4. Scores to be incremented correctly.
 5. Play again
+6. Know the rules of the game
 
 ### Site Owner Stories
 1. Customers to enjoy the game

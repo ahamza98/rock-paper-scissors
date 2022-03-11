@@ -118,7 +118,7 @@ function startGame(userChoice) {
             return aiWin(userChoice, aiChoice);
         }
         else if (userChoice === aiChoice){
-            
+
             resultUserContainer.classList.add('blue-border')
 
             resultAiContainer.classList.add('blue-border')
@@ -171,6 +171,7 @@ reset.addEventListener('click', () => {
     aiScoreDisplay.innerHTML = aiScore
     resultUser.innerHTML = "";
     resultAi.innerHTML = "";
+    
 
 })
 
