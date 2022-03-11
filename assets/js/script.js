@@ -121,3 +121,14 @@ closeRules.addEventListener('click', () => {
 })
 
 
+// reset game 
+
+reset.addEventListener('click', () => {
+    userScore = 0
+    aiScore = 0
+    userScoreDisplay.innerHTML = userScore;
+    aiScoreDisplay.innerHTML = aiScore
+    resultUser.innerHTML = "";
+    resultAi.innerHTML = "";
+})
+
