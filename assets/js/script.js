@@ -108,16 +108,16 @@ main();
 
 let openRules = document.getElementById('rules')
 let closeRules = document.getElementById('close')
-let modelContainer = document.getElementById('modelCon')
+let modalContainer = document.getElementById('modalCon')
 
 // Open functions //
 openRules.addEventListener('click', () => {
-    modelContainer.classList.add('show');
+    modalContainer.classList.add('show');
 })
 
 // close functions //
 closeRules.addEventListener('click', () => {
-    modelContainer.classList.remove('show');
+    modalContainer.classList.remove('show');
 })
 
 
