@@ -172,6 +172,14 @@ reset.addEventListener('click', () => {
     resultUser.innerHTML = "";
     resultAi.innerHTML = "";
     
+    resultUserContainer.classList.remove('green-border')
+    resultUserContainer.classList.remove('blue-border')
+    resultUserContainer.classList.remove('red-border')
+
+    resultAiContainer.classList.remove('green-border')
+    resultAiContainer.classList.remove('blue-border')
+    resultAiContainer.classList.remove('red-border')
+
 
 })
 
