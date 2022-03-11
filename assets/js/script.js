@@ -92,20 +92,37 @@ function startGame(userChoice) {
        || (userChoice === 'paper' && aiChoice === "rock")
        || (userChoice === "scissors" && aiChoice === "paper")) {
         resultUserContainer.classList.add('green-border')
+        resultUserContainer.classList.remove('red-border')
+        resultUserContainer.classList.remove('blue-border')
+
+
+
+
         resultAiContainer.classList.add('red-border')
+        resultAiContainer.classList.remove('green-border')
+        resultAiContainer.classList.add('blue-border')
+
 
         return userWin(userChoice, aiChoice);
     } 
     else if ((userChoice === 'rock' && aiChoice === 'paper')
         || (userChoice === 'paper' && aiChoice === 'scissors')
         || (userChoice === 'scissors' && aiChoice === 'rock')){
+            resultUserContainer.classList.remove('green-border')
+            resultUserContainer.classList.remove('blue-border')
             resultUserContainer.classList.add('red-border')
+
+            resultAiContainer.classList.remove('blue-border')
+            resultAiContainer.classList.remove('red-border')
             resultAiContainer.classList.add('green-border')
             return aiWin(userChoice, aiChoice);
         }
         else if (userChoice === aiChoice){
+            
             resultUserContainer.classList.add('blue-border')
+
             resultAiContainer.classList.add('blue-border')
+
 
             return tie(userChoice, aiChoice);
         }
