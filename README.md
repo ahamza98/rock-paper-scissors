@@ -206,6 +206,21 @@ Solution: Add a favicon to the website.
   * After refreshing it will say your site is published at https://ahamza98.github.io/rock-paper-scissors/
 
 
+## Credits
+### Content
+- Modal container was learnt through tutorials on [youtube](https://youtube.com/)
+- Structuring Javascript content taken from [freecodeCamp](https://m.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) via youtube
+### Media
+- Favicon taken [Pixabay](https://www.pixabay.com/).
+- Social media icons and button icon taken from [fontawesome](https://fontawesome.com/)
+- 
+
+# Acknowledgement 
+
+- Firstly to Code Institute for their videos and content.
+- Code Institute tutor team who were always quick to respond to my needs.
+- A big shoutout to the slack team community for their quick responses and patience.
+- My mentor Mo Shami helping me structure my code content and readme
 
 
 
