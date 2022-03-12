@@ -116,5 +116,60 @@ This website consists of one page and 5 features.
 <img src="readme-images/features/project-2-footer.png">
 </details>
 
+#
+#
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- VS code editor
+- Font Awesome
+- Pixabay
+- Lighthouse
+- W3C Markup validation service
+- W3C Jigsaw CSS validation service 
+- WAVE WebAIM web accessibility evaluation tool
+
+#
+#
+## Validation, Accessibility and Performance
+### Validation
+Website used for HTML and CSS validation: [W3C](https://www.w3.org/) <br />
+
+<details><summary>HTML Validation</summary>
+- No errors <br />
+
+<img src="readme-images/accessibility/project-2-html-checker.png">
+</details> <br />
+
+<details><summary>CSS Validation</summary>
+- No errors <br />
+
+<img src="readme-images/accessibility/project-2-css-checker.png">
+</details> <br />
+
+### Accessibility
+Website used to check accessibility of the page: [Wave WebAIM](https://wave.webaim.org/) <br />
+
+- No errors or contrast errors.
+- Alert on the result section, as the paragraph element, seems to be a heading element. But I chose  the paragraph element so the text will not come out too big. <br />
+
+<img src="readme-images/accessibility/project-2-accessibility.png">
+ <br />
+
+ ### Performance
+
+
+
+
+
+
 
 
