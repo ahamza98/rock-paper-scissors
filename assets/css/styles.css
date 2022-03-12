@@ -67,6 +67,10 @@ body {
     font-size: 30px;
 }
 
+.score-area h2 {
+    font-size: 30px;
+}
+
 .artilleries {
     width: 90%;
     margin: 0 auto;
