@@ -165,6 +165,28 @@ Website used to check accessibility of the page: [Wave WebAIM](https://wave.weba
  <br />
 
  ### Performance
+Google Chrome Lighthouse is a built in software to check the performance, accebility and search engine optimization. <br />
+
+<img src="readme-images/accessibility/project-2-lighthouse.png">
+
+#
+#
+## Testing
+### Device Testing
+This website was tested on the following devices:
+- Lenovo Ideapad c340
+- Ipad mini
+- Samsung Galaxy S10
+
+### Browser Testing
+This website was tested on the following browsers:
+- Google Chrome
+- Mozilla firefox
+- Samsung Internet
+
+
+
+
 
 
 
