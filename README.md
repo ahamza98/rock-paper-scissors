@@ -183,6 +183,29 @@ This website was tested on the following browsers:
 - Google Chrome
 - Mozilla firefox
 - Samsung Internet
+#
+#
+## Bugs
+Some bug issues I faced were:
+1. Making the game container compatible for smaller devices.
+<br/> Solution: Set width in smaller screen sizes to 90% to 100%.
+2. The modal was extending the page in the x-axis and away from the main screen area. <br/>
+Solution: set overflow x : hidden, and set the modal container height and width to 100%.
+3. In the results area, where the choices are visually displayed, the borders would stay on blue, and not change. <br/>
+Solution: remove the classList('blue-border') that changes the border color in Javascript area.
+4. Favicon error on console. <br/>
+Solution: Add a favicon to the website.
+
+## Deployment
+* This site was deployed to the Github pages, the steps to deploy:
+  * On the Github reprository page, click on settings
+  * Go down and click on pages
+  * From the source drop-down menu click on Main.
+  * Save your reprository
+  * From there on the reprository will be saved and uploaded to the server.
+  * After refreshing it will say your site is published at https://ahamza98.github.io/rock-paper-scissors/
+
+
 
 
 
